@@ -4,9 +4,9 @@ from base_plugin import BasePlugin, HookResult, HookStrategy
 
 __id__ = "extera-converter"
 __name__ = "⚖️ exteraConverter"
-__description__ = "Довольно точный конвертер, работающий со множеством валют. Команда по умолчанию [//cc]"
+__description__ = "Довольно точный конвертер, работающий со множеством валют.\nКоманда по умолчанию [//cc].\n\nBy exteraBin Team"
 __author__ = "@MrRighter"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __icon__ = "exteraBin_Team/0"
 __min_version__ = "11.12.0"
 
