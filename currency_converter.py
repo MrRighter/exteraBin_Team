@@ -6,8 +6,8 @@ __id__ = "extera-converter"
 __name__ = "⚖️ exteraConverter"
 __description__ = "Довольно точный конвертер, работающий со множеством валют. Команда по умолчанию [//cc]"
 __author__ = "@MrRighter"
-__version__ = "1.0.0"
-# __icon__ = "exteraBin Team/1"
+__version__ = "1.0.1"
+__icon__ = "exteraBin_Team/0"
 __min_version__ = "11.12.0"
 
 
@@ -17,10 +17,6 @@ class ExteraConverter(BasePlugin):
         self.add_on_send_message_hook()
 
     def on_send_message_hook(self, account: int, params) -> HookResult:
-        """
-        Конвертирует практически любые (крипто-)валюты из одной в другую, используя cbr-xml-daily
-        :return: Результат конвертации: amount AAA = new_amount BBB
-        """
         if not isinstance(params.message, str) or not params.message.startswith("//cc"):
             return HookResult()
 
